@@ -1,0 +1,17 @@
+.container
+	.jumbotron.main-jumbotron
+		.pull-left
+			h1.main-text Criya Corporation
+				span.small-sign
+					| &trade;
+			h2.app-text Organizational Chart App
+		a.btn.btn-primary.btn-lg.pull-right.go-button(href="#/charts") GO
+	.row
+		.col-md-6
+			.panel.panel-info
+				.panel-heading.text-center Releases
+				.panel-body(ng-include="'partials/main/releases'")
+		.col-md-6
+			.panel.panel-info
+				.panel-heading.text-center Info
+				.panel-body(ng-include="'partials/main/info'")

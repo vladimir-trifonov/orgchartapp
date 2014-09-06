@@ -1,0 +1,38 @@
+.container.manage-chart-wrapper
+	.panel.panel-primary
+		.panel-heading
+			.panel-title
+				| Download
+		.panel-body
+			a.btn.btn-primary(ng-href="server/download", target="_self")
+				| Download
+	.panel.panel-primary
+		.panel-heading
+			.panel-title
+				| Upload
+		.panel-body
+			p
+				| Please use tool like
+				a(href="http://jsonlint.com/", target="_blank")
+					| &nbsp;jsonlint.com
+				|  to validate the data before upload the file.
+			br
+			input.btn-primary(type="file", ng-file-select="onFileSelect($files)", onclick="this.value=null")
+	.panel.panel-primary
+		.jumbotron.status-log
+			| Status log:
+			span.status-log-text 
+				| &nbsp;Last updated:&nbsp;
+				span.log-text-part
+					| {{status.updatedAt | date:'dd.MM.yyyy HH:mm:ss'}}&nbsp;
+				| by
+				span.log-text-part
+					|&nbsp;{{status.updatedBy}}
+
+
+
+
+
+
+
+

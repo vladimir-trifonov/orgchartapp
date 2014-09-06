@@ -1,0 +1,6 @@
+div(ng-repeat="release in releases | limitTo: '3'")
+	.row
+		.col-md-3
+			| {{release.date | date: 'MMM d yyyy'}}
+		.col-md-9
+			| {{release.name}}

@@ -1,0 +1,25 @@
+extends includes/layout
+block main-content
+	header.nav.navbar-fixed-top(ng-hide="headerHide")
+		.container
+			.navbar-header
+				button.navbar-toggle.btn-default(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+					span.sr-only
+						| Toggle navigation
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand.logo-wrapper(href="#/")
+					div.logo
+			.navbar-collapse.collapse
+				ul.nav.navbar-nav
+					li
+						a(href="#/") Home
+					li
+						a(href="#/charts") Charts
+				div(ng-include="'/partials/account/login'")
+	section.clearfix
+		div(ng-view)
+
+	footer(ng-hide="footerHide")
+		p.text-center
+			| Criya Corporation &trade;

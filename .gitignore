@@ -1,0 +1,8 @@
+node_modules
+public/lib/angular
+public/lib/angular-resource
+public/lib/angular-route
+public/lib/bootstrap
+public/lib/jquery
+public/lib/ng-file-upload
+public/lib/toastr
